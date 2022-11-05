@@ -1,0 +1,39 @@
+.navbar_section {
+	font-family: "Gelion";
+	width: 80%;
+	margin: 0 auto;
+}
+.navbar_logo {
+	height: 65px;
+	width: 192px;
+}
+#responsive-navbar-nav a {
+	color: var(--green);
+	font-size: 18px;
+	margin-right: 10px;
+}
+.navbar_container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+}
+.navbar-collapse {
+	flex-grow: 0;
+}
+.navButton {
+	outline: 0;
+	border: 2px solid var(--red);
+	height: 55px;
+	width: 154px;
+	border-radius: 46px;
+	background: transparent;
+	color: var(--red);
+	font-size: 18px;
+}
+
+@media screen and (max-width: 768px) {
+	#responsive-navbar-nav a {
+		margin-right: 0;
+	}
+}

@@ -1,0 +1,25 @@
+.footer_section {
+	width: 80%;
+	margin: 4rem auto 1rem auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.footer_links {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	flex-grow: 1;
+}
+@media screen and (max-width: 1024px) {
+	.footer_section {
+		flex-direction: column;
+	}
+	.footer_links {
+		margin: 1rem auto;
+	}
+	.footer_links a {
+		margin-right: 10px;
+	}
+}

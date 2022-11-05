@@ -1,0 +1,21 @@
+.contagion_section {
+	width: 80%;
+	margin: 0 auto;
+}
+.contagion_cards {
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+}
+.contagion_header {
+	text-align: center;
+}
+.contagion_header h3 {
+	color: var(--red);
+}
+.contagion_header h1 {
+	color: var(--green);
+}
+.contagion_header {
+	margin-bottom: 2rem;
+}

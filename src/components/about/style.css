@@ -1,0 +1,49 @@
+.about_section {
+	width: 80%;
+	margin: 1rem auto;
+}
+.about {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.about_image {
+	height: 512px;
+	width: 877px;
+	margin-right: 6rem;
+}
+.about_text h3 {
+	color: var(--red);
+}
+.about_text h1 {
+	color: var(--green);
+}
+.aboutButton {
+	outline: 0;
+	border: 0;
+	height: 55px;
+	width: 156px;
+	border-radius: 46px;
+	background-color: var(--lightred);
+	color: var(--red);
+	font-size: 20px;
+	font-weight: 600;
+	transition: all 0.1s;
+	margin-top: 2rem;
+}
+
+@media screen and (max-width: 1024px) {
+	.about {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.about_text {
+		text-align: center;
+	}
+	.about_image {
+		height: 40vh;
+		width: 90vw;
+		margin-right: 0;
+	}
+}

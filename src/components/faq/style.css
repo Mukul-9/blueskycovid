@@ -1,0 +1,58 @@
+.faq_section {
+	width: 80%;
+	margin: 4rem auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.faq_section h1 {
+	color: var(--green);
+}
+
+.input_send {
+	width: 590px;
+	height: 74px;
+	margin-top: 4rem;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	border-radius: 50px;
+	background-color: white;
+	box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+.textInput {
+	width: 70%;
+	outline: 0;
+	border: 0;
+	background: white;
+	padding-left: 1rem;
+}
+.sendButton {
+	width: 25%;
+	border-radius: 50px;
+	height: 54px;
+	border: 2px solid transparent;
+	background-color: var(--red);
+	color: white;
+	outline: 0;
+	border: 0;
+	transition: all 0.1s;
+}
+.sendButton:hover {
+	color: var(--red);
+	border: 2px solid var(--red);
+	background-color: white;
+}
+
+@media screen and (max-width: 1024px) {
+	.input_send {
+		width: 90vw;
+		margin-top: 1rem;
+	}
+	.faq_section {
+		text-align: center;
+	}
+}

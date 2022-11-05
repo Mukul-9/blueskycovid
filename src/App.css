@@ -1,38 +1,69 @@
-.App {
-  text-align: center;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Clearing out default React-Bootstrap styling */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin-bottom: 0 !important;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/*importing Font Family as mentioned in the design */
+@font-face {
+	font-family: "Gelion";
+	src: local("Gelion Regular"),
+		url(assets/fonts/gelion-cufonfonts-webfont/Gelion\ Regular.woff)
+			format("woff");
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+html {
+	scroll-behavior: smooth;
+	overflow-x: hidden;
 }
-
-.App-link {
-  color: #61dafb;
+body {
+	background: linear-gradient(
+		157deg,
+		rgba(255, 248, 248, 1) 0%,
+		rgba(255, 255, 255, 1) 25%,
+		rgba(255, 248, 248, 1) 50%,
+		rgba(255, 255, 255, 1) 75%,
+		rgba(255, 248, 248, 1) 100%
+	);
+	overflow-x: hidden;
+	position: relative;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+p {
+	font-family: "Gelion";
+	font-weight: 400 !important;
+	color: var(--text);
+}
+h1,
+h3 {
+	font-family: "Red Hat Display", sans-serif;
+	font-weight: 700 !important;
+	margin-bottom: 1rem !important;
+}
+/* Defining the color code to be used throughout the wesbite */
+:root {
+	--red: #fb4c47;
+	--lightred: #fa565226;
+	--green: #035755;
+	--lightgreen: #13615f;
+	--text: #4b4f51;
+}
+@media screen and (max-width: 1024px) {
+	.navbar_section,
+	.hero_section,
+	.faq_section,
+	.live_section,
+	.footer_section,
+	.about_section,
+	.contagion_section,
+	.prevention_section {
+		width: 95%;
+	}
 }

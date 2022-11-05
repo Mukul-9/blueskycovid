@@ -1,0 +1,81 @@
+.absolute_pos {
+	position: absolute;
+	z-index: -1;
+	transform: scale(0.7);
+}
+.light_right_top {
+	left: 90.5%;
+	top: 80.04%;
+}
+.dark_right_top {
+	left: 90.5%;
+	top: 18.88%;
+}
+.light_right_mid {
+	left: 90.5%;
+	top: 91.33%;
+	opacity: 0.1;
+}
+/* .dark_left_top {
+	left: 5.21%;
+	right: 81.56%;
+	top: 32.9%;
+	bottom: 63.91%;
+} */
+.cont_left {
+	left: 4.74%;
+	right: 88.53%;
+	top: 40.59%;
+	bottom: 53.76%;
+}
+.cont_right {
+	left: 80.67%;
+	right: 1.86%;
+	top: 43.44%;
+	bottom: 49.74%;
+}
+.green_left {
+	left: -2.08%;
+	right: 88.66%;
+	top: 61.04%;
+	bottom: 35.44%;
+}
+.green_right {
+	left: 91.67%;
+	right: 1.67%;
+	top: 75.86%;
+	bottom: 22.53%;
+	transform: scale(0.4);
+}
+.scroll_div {
+	position: fixed;
+	bottom: 10%;
+	right: 5%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 50px;
+	width: 50px;
+	background-color: white;
+	cursor: pointer;
+	border-radius: 50%;
+	color: var(--red);
+	box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.1);
+	border: 1px solid transparent;
+	transition: all 0.1s;
+}
+.scroll_div:hover {
+	border: 1px solid var(--red);
+}
+.scroll_top {
+	margin-top: 8px;
+}
+@media screen and (max-width: 1024px) {
+	.helper_images {
+		display: none;
+	}
+	.scroll_div {
+		bottom: 5%;
+		right: 5%;
+	}
+}
